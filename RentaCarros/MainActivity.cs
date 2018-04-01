@@ -11,7 +11,7 @@ using RentaCarros.Datos;
 
 namespace RentaCarros
 {
-    [Activity(Label = "Renta de Carros Roman SA", MainLauncher = true)]
+    [Activity(Label = "Renta de Carros Roman SA", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         private Button categoriasBtn;
@@ -32,6 +32,10 @@ namespace RentaCarros
             SetContentView(Resource.Layout.Main);
             Init();
             SetEventHandlers();
+
+            // ActionBar setup
+            ActionBar.SetIcon(Resource.Drawable.icon);
+            ActionBar.DisplayOptions = ActionBarDisplayOptions.ShowTitle | ActionBarDisplayOptions.ShowHome;
         }
         private void Init()
         {

@@ -104,8 +104,7 @@ namespace RentaCarros.Fragments.Carros
                     Toast.MakeText(this.Activity, "Se ha eliminado el carro correctamente.", ToastLength.Long)
                         .Show();
 
-                    _categoriasDropDown.SetSelection(0);
-                    _kilometraje.Text = string.Empty;
+                    LimpiarCampos();
                 }
                 else
                     Toast.MakeText(this.Activity, "Hubo un problema al tratar de eliminar el carro. Intente de nuevo mas tarde.",

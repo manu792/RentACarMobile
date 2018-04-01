@@ -13,20 +13,13 @@
         android:minHeight="25px"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/carrosListView" />
-    <Spinner
-        android:padding="2dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/categoriasDropDown"
-        android:layout_marginTop="30dp" />
+        android:id="@+id/clientesListView" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtKilometraje"
-        android:hint="Kilometraje..."
-        android:numeric="decimal"
-        android:inputType="number" />
+        android:id="@+id/txtNombre"
+        android:hint="Nombre..."
+        android:layout_marginTop="30dp" />
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -35,14 +28,14 @@
             android:text="Actualizar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCarroActualizar"
+            android:id="@+id/btnActualizar"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="94.5dp" />
         <Button
             android:text="Eliminar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCarroEliminar"
+            android:id="@+id/btnEliminar"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="208.0dp" />

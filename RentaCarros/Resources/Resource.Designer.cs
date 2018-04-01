@@ -41,89 +41,114 @@ namespace RentaCarros
 			}
 		}
 		
+		public partial class Drawable
+		{
+			
+			// aapt resource value: 0x7f020000
+			public const int icon = 2130837504;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040012
-			public const int btnActualizar = 2130968594;
+			// aapt resource value: 0x7f050012
+			public const int btnActualizar = 2131034130;
 			
-			// aapt resource value: 0x7f040005
-			public const int btnCarroActualizar = 2130968581;
+			// aapt resource value: 0x7f050005
+			public const int btnCarroActualizar = 2131034117;
 			
-			// aapt resource value: 0x7f040008
-			public const int btnCarroBuscar = 2130968584;
+			// aapt resource value: 0x7f050008
+			public const int btnCarroBuscar = 2131034120;
 			
-			// aapt resource value: 0x7f040006
-			public const int btnCarroEliminar = 2130968582;
+			// aapt resource value: 0x7f050006
+			public const int btnCarroEliminar = 2131034118;
 			
-			// aapt resource value: 0x7f04000c
-			public const int btnCarroGuardar = 2130968588;
+			// aapt resource value: 0x7f05000c
+			public const int btnCarroGuardar = 2131034124;
 			
-			// aapt resource value: 0x7f040013
-			public const int btnEliminar = 2130968595;
+			// aapt resource value: 0x7f050013
+			public const int btnEliminar = 2131034131;
 			
-			// aapt resource value: 0x7f040014
-			public const int btnGuardar = 2130968596;
+			// aapt resource value: 0x7f050014
+			public const int btnGuardar = 2131034132;
 			
-			// aapt resource value: 0x7f040001
-			public const int buscar = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int buscar = 2131034113;
 			
-			// aapt resource value: 0x7f040018
-			public const int carroBtn = 2130968600;
+			// aapt resource value: 0x7f05001b
+			public const int carroBtn = 2131034139;
 			
-			// aapt resource value: 0x7f040002
-			public const int carrosListView = 2130968578;
+			// aapt resource value: 0x7f050002
+			public const int carrosListView = 2131034114;
 			
-			// aapt resource value: 0x7f04000a
-			public const int categoria = 2130968586;
+			// aapt resource value: 0x7f05000a
+			public const int categoria = 2131034122;
 			
-			// aapt resource value: 0x7f040017
-			public const int categoriaBtn = 2130968599;
+			// aapt resource value: 0x7f05001a
+			public const int categoriaBtn = 2131034138;
 			
-			// aapt resource value: 0x7f040003
-			public const int categoriasDropDown = 2130968579;
+			// aapt resource value: 0x7f050003
+			public const int categoriasDropDown = 2131034115;
 			
-			// aapt resource value: 0x7f040019
-			public const int clienteBtn = 2130968601;
+			// aapt resource value: 0x7f050018
+			public const int cedula = 2131034136;
 			
-			// aapt resource value: 0x7f040000
-			public const int fragmentContainer = 2130968576;
+			// aapt resource value: 0x7f05001c
+			public const int clienteBtn = 2131034140;
 			
-			// aapt resource value: 0x7f04000b
-			public const int kilometraje = 2130968587;
+			// aapt resource value: 0x7f050017
+			public const int clientesListView = 2131034135;
 			
-			// aapt resource value: 0x7f040009
-			public const int placa = 2130968585;
+			// aapt resource value: 0x7f050000
+			public const int fragmentContainer = 2131034112;
 			
-			// aapt resource value: 0x7f04001a
-			public const int rentaBtn = 2130968602;
+			// aapt resource value: 0x7f05000b
+			public const int kilometraje = 2131034123;
 			
-			// aapt resource value: 0x7f040015
-			public const int txtCedula = 2130968597;
+			// aapt resource value: 0x7f050019
+			public const int nombre = 2131034137;
 			
-			// aapt resource value: 0x7f04000d
-			public const int txtDescripcion = 2130968589;
+			// aapt resource value: 0x7f050009
+			public const int placa = 2131034121;
 			
-			// aapt resource value: 0x7f040004
-			public const int txtKilometraje = 2130968580;
+			// aapt resource value: 0x7f05001d
+			public const int rentaBtn = 2131034141;
 			
-			// aapt resource value: 0x7f040016
-			public const int txtNombre = 2130968598;
+			// aapt resource value: 0x7f050015
+			public const int txtCedula = 2131034133;
 			
-			// aapt resource value: 0x7f040007
-			public const int txtPlaca = 2130968583;
+			// aapt resource value: 0x7f05000d
+			public const int txtDescripcion = 2131034125;
 			
-			// aapt resource value: 0x7f04000f
-			public const int txtPrecioDia = 2130968591;
+			// aapt resource value: 0x7f050004
+			public const int txtKilometraje = 2131034116;
 			
-			// aapt resource value: 0x7f04000e
-			public const int txtPrecioKm = 2130968590;
+			// aapt resource value: 0x7f050016
+			public const int txtNombre = 2131034134;
 			
-			// aapt resource value: 0x7f040010
-			public const int txtTarifaDia = 2130968592;
+			// aapt resource value: 0x7f050007
+			public const int txtPlaca = 2131034119;
 			
-			// aapt resource value: 0x7f040011
-			public const int txtTarifaKm = 2130968593;
+			// aapt resource value: 0x7f05000f
+			public const int txtPrecioDia = 2131034127;
+			
+			// aapt resource value: 0x7f05000e
+			public const int txtPrecioKm = 2131034126;
+			
+			// aapt resource value: 0x7f050010
+			public const int txtTarifaDia = 2131034128;
+			
+			// aapt resource value: 0x7f050011
+			public const int txtTarifaKm = 2131034129;
 			
 			static Id()
 			{
@@ -138,41 +163,47 @@ namespace RentaCarros
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int Carro = 2130837504;
+			// aapt resource value: 0x7f030000
+			public const int Carro = 2130903040;
 			
-			// aapt resource value: 0x7f020001
-			public const int CarroBuscar2Fragment = 2130837505;
+			// aapt resource value: 0x7f030001
+			public const int CarroBuscar2Fragment = 2130903041;
 			
-			// aapt resource value: 0x7f020002
-			public const int CarroBuscarFragment = 2130837506;
+			// aapt resource value: 0x7f030002
+			public const int CarroBuscarFragment = 2130903042;
 			
-			// aapt resource value: 0x7f020003
-			public const int CarroRowView = 2130837507;
+			// aapt resource value: 0x7f030003
+			public const int CarroRowView = 2130903043;
 			
-			// aapt resource value: 0x7f020004
-			public const int CarrosAgregarFragment = 2130837508;
+			// aapt resource value: 0x7f030004
+			public const int CarrosAgregarFragment = 2130903044;
 			
-			// aapt resource value: 0x7f020005
-			public const int Categoria = 2130837509;
+			// aapt resource value: 0x7f030005
+			public const int Categoria = 2130903045;
 			
-			// aapt resource value: 0x7f020006
-			public const int CategoriaBuscarFragment = 2130837510;
+			// aapt resource value: 0x7f030006
+			public const int CategoriaBuscarFragment = 2130903046;
 			
-			// aapt resource value: 0x7f020007
-			public const int CategoriasAgregarFragment = 2130837511;
+			// aapt resource value: 0x7f030007
+			public const int CategoriasAgregarFragment = 2130903047;
 			
-			// aapt resource value: 0x7f020008
-			public const int Cliente = 2130837512;
+			// aapt resource value: 0x7f030008
+			public const int Cliente = 2130903048;
 			
-			// aapt resource value: 0x7f020009
-			public const int ClienteAgregarFragment = 2130837513;
+			// aapt resource value: 0x7f030009
+			public const int ClienteAgregarFragment = 2130903049;
 			
-			// aapt resource value: 0x7f02000a
-			public const int Main = 2130837514;
+			// aapt resource value: 0x7f03000a
+			public const int ClienteBuscarFragment = 2130903050;
 			
-			// aapt resource value: 0x7f02000b
-			public const int Renta = 2130837515;
+			// aapt resource value: 0x7f03000b
+			public const int ClienteRowView = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int Main = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int Renta = 2130903053;
 			
 			static Layout()
 			{
@@ -187,8 +218,8 @@ namespace RentaCarros
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int app_name = 2130903040;
+			// aapt resource value: 0x7f040000
+			public const int app_name = 2130968576;
 			
 			static String()
 			{

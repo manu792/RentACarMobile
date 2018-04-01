@@ -93,79 +93,79 @@ namespace RentaCarros.Datos
                     TarifaDia = 120000,
                     TarifaKm = 2000
                 });
-                //conn.InsertAll(new List<Categoria>()
-                //{
-                //    new Categoria()
-                //    {
-                //        Id = 1,
-                //        Descripcion = "Vehiculo liviano",
-                //        PrecioDia = 150000,
-                //        PrecioKm = 1000,
-                //        TarifaDia = 120000,
-                //        TarifaKm = 2000
-                //    },
-                //    new Categoria()
-                //    {
-                //        Id = 2,
-                //        Descripcion = "Carga liviana",
-                //        PrecioDia = 150000,
-                //        PrecioKm = 1000,
-                //        TarifaDia = 120000,
-                //        TarifaKm = 2000
-                //    }
-                //});
+                conn.InsertAll(new List<Categoria>()
+                {
+                    new Categoria()
+                    {
+                        Id = 1,
+                        Descripcion = "Vehiculo liviano",
+                        PrecioDia = 150000,
+                        PrecioKm = 1000,
+                        TarifaDia = 120000,
+                        TarifaKm = 2000
+                    },
+                    new Categoria()
+                    {
+                        Id = 2,
+                        Descripcion = "Carga liviana",
+                        PrecioDia = 150000,
+                        PrecioKm = 1000,
+                        TarifaDia = 120000,
+                        TarifaKm = 2000
+                    }
+                });
 
-                //conn.InsertAll(new List<Carro>()
-                //{
-                //    new Carro()
-                //    {
-                //        Id = 1,
-                //        CategoriaId = 1,
-                //        Metros = 4,
-                //        Placa = "811187"
-                //    },
-                //    new Carro()
-                //    {
-                //        Id = 2,
-                //        CategoriaId = 2,
-                //        Metros = 5,
-                //        Placa = "MRS872"
-                //    }
-                //});
+                conn.InsertAll(new List<Carro>()
+                {
+                    new Carro()
+                    {
+                        Id = 1,
+                        CategoriaId = 1,
+                        Kilometraje = 4,
+                        Placa = "811187"
+                    },
+                    new Carro()
+                    {
+                        Id = 2,
+                        CategoriaId = 2,
+                        Kilometraje = 5,
+                        Placa = "MRS872"
+                    }
+                });
 
-                //conn.InsertAll(new List<Cliente>
-                //{
-                //    new Cliente()
-                //    {
-                //        Id = 1,
-                //        Cedula = "115190794",
-                //        Nombre = "Manuel Roman"
-                //    },
-                //    new Cliente()
-                //    {
-                //        Id = 2,
-                //        Cedula = "116115487",
-                //        Nombre = "Ellie Roman"
-                //    }
-                //});
+                conn.InsertAll(new List<Cliente>
+                {
+                    new Cliente()
+                    {
+                        Id = 1,
+                        Cedula = "115190794",
+                        Nombre = "Manuel Roman"
+                    },
+                    new Cliente()
+                    {
+                        Id = 2,
+                        Cedula = "116115487",
+                        Nombre = "Ellie Roman"
+                    }
+                });
 
-                //conn.InsertAll(new List<Renta>
-                //{
-                //    new Renta()
-                //    {
-                //        Id = 1,
-                //        CarroId = 1,
-                //        ClienteId = 2,
-                //        FechaRenta = DateTime.Now,
-                //        FechaRetorno = DateTime.Now.AddMonths(1),
-                //        MetrosRenta = 5000,
-                //        MetrosRetorno = 7000,
-                //        PrecioDia = 15000,
-                //        PrecioKm = 3000,
-                //        TarifaDia = 3500,
-                //        TarifaKm = 4000
-                //    }
-                //});
+                conn.InsertAll(new List<Renta>
+                {
+                    new Renta()
+                    {
+                        Id = 1,
+                        CarroId = 1,
+                        ClienteId = 2,
+                        FechaRenta = DateTime.Now,
+                        FechaRetorno = DateTime.Now.AddMonths(1),
+                        MetrosRenta = 5000,
+                        MetrosRetorno = 7000,
+                        PrecioDia = 15000,
+                        PrecioKm = 3000,
+                        TarifaDia = 3500,
+                        TarifaKm = 4000
+                    }
+                });
             }
             else
             {

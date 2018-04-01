@@ -25,9 +25,27 @@ namespace RentaCarros
 
             // Add tabs
             ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
+            ActionBar.SetIcon(Resource.Drawable.icon);
+            ActionBar.SetDisplayShowHomeEnabled(true);
+            ActionBar.DisplayOptions = ActionBarDisplayOptions.HomeAsUp | ActionBarDisplayOptions.ShowTitle | ActionBarDisplayOptions.ShowHome;
+            
 
             AddTab("Agregar", 0, new CategoriasAgregarFragment());
             AddTab("Buscar", 0, new CategoriaBuscarFragment());
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    var intent = new Intent(this, typeof(MainActivity));
+                    StartActivity(intent);
+                    break;
+                default:
+                    break;
+            }
+            return base.OnOptionsItemSelected(item);
         }
 
         private void AddTab(string text, int iconId, Fragment view)
