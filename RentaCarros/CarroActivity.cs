@@ -28,6 +28,7 @@ namespace RentaCarros
 
             AddTab("Agregar", 0, new CarroAgregarFragment());
             AddTab("Buscar", 0, new CarroBuscarFragment());
+            AddTab("Buscar2", 0, new CarroBuscar2Fragment());
         }
 
         private void AddTab(string text, int iconId, Fragment view)

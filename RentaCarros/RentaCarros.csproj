@@ -54,12 +54,14 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\CarroListAdapter.cs" />
     <Compile Include="CarroActivity.cs" />
     <Compile Include="CategoriaActivity.cs" />
     <Compile Include="ClienteActivity.cs" />
     <Compile Include="Datos\Database.cs" />
     <Compile Include="Fragments\Carros\BaseCarroFragment.cs" />
     <Compile Include="Fragments\Carros\CarroAgregarFragment.cs" />
+    <Compile Include="Fragments\Carros\CarroBuscar2Fragment.cs" />
     <Compile Include="Fragments\Carros\CarroBuscarFragment.cs" />
     <Compile Include="Fragments\Categorias\BaseCategoriaFragment.cs" />
     <Compile Include="Fragments\Categorias\CategoriaBuscarFragment.cs" />
@@ -103,6 +105,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CarroBuscarFragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CarroBuscar2Fragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CarroRowView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -6,10 +6,11 @@
     android:minWidth="25px"
     android:minHeight="25px">
     <Spinner
-      android:padding="2dp"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/categoriasDropDown" />
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoriasDropDown"
+        android:layout_marginBottom="15.0dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
