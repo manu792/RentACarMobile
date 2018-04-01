@@ -13,7 +13,7 @@ using SQLite;
 
 namespace RentaCarros.Modelos
 {
-    public class Categoria
+    public class Categoria : IEquatable<Categoria>
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
@@ -22,6 +22,11 @@ namespace RentaCarros.Modelos
         public double PrecioDia { get; set; }
         public double TarifaDia { get; set; }
         public double TarifaKm { get; set; }
+
+        public bool Equals(Categoria other)
+        {
+            return other.Id == Id;
+        }
 
         public override string ToString()
         {
