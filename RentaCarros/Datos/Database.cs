@@ -20,6 +20,7 @@ namespace RentaCarros.Datos
         private string path = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3");
         private SQLiteConnection conn;
         private static Database<T> _instance;
+
         public static Database<T> Instance
         {
             get
@@ -32,7 +33,6 @@ namespace RentaCarros.Datos
 
         private Database()
         {
-            conn = new SQLiteConnection(path);
             BootstrapDatabase();
         }
 
@@ -66,13 +66,15 @@ namespace RentaCarros.Datos
 
         private void BootstrapDatabase()
         {
-            conn.CreateTable<Carro>();
-            conn.CreateTable<Cliente>();
-            conn.CreateTable<Renta>();
-            conn.CreateTable<Categoria>();
-
             if (!File.Exists(path))
             {
+                conn = new SQLiteConnection(path);
+
+                conn.CreateTable<Carro>();
+                conn.CreateTable<Cliente>();
+                conn.CreateTable<Renta>();
+                conn.CreateTable<Categoria>();
+
                 conn.Insert(new Categoria()
                 {
                     Id = 1,
@@ -164,6 +166,15 @@ namespace RentaCarros.Datos
                 //        TarifaKm = 4000
                 //    }
                 //});
+            }
+            else
+            {
+                conn = new SQLiteConnection(path);
+
+                conn.CreateTable<Carro>();
+                conn.CreateTable<Cliente>();
+                conn.CreateTable<Renta>();
+                conn.CreateTable<Categoria>();
             }
         }
     }

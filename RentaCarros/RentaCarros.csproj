@@ -66,6 +66,9 @@
     <Compile Include="Fragments\Categorias\BaseCategoriaFragment.cs" />
     <Compile Include="Fragments\Categorias\CategoriaBuscarFragment.cs" />
     <Compile Include="Fragments\Categorias\CategoriasAgregarFragment.cs" />
+    <Compile Include="Fragments\Clientes\BaseClienteFragment.cs" />
+    <Compile Include="Fragments\Clientes\ClienteAgregarFragment.cs" />
+    <Compile Include="Fragments\Clientes\ClienteBuscarFragment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Modelos\Carro.cs" />
     <Compile Include="Modelos\Categoria.cs" />
@@ -111,6 +114,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CarroRowView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ClienteAgregarFragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

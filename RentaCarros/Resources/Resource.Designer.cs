@@ -68,8 +68,8 @@ namespace RentaCarros
 			// aapt resource value: 0x7f040001
 			public const int buscar = 2130968577;
 			
-			// aapt resource value: 0x7f040016
-			public const int carroBtn = 2130968598;
+			// aapt resource value: 0x7f040018
+			public const int carroBtn = 2130968600;
 			
 			// aapt resource value: 0x7f040002
 			public const int carrosListView = 2130968578;
@@ -77,14 +77,14 @@ namespace RentaCarros
 			// aapt resource value: 0x7f04000a
 			public const int categoria = 2130968586;
 			
-			// aapt resource value: 0x7f040015
-			public const int categoriaBtn = 2130968597;
+			// aapt resource value: 0x7f040017
+			public const int categoriaBtn = 2130968599;
 			
 			// aapt resource value: 0x7f040003
 			public const int categoriasDropDown = 2130968579;
 			
-			// aapt resource value: 0x7f040017
-			public const int clienteBtn = 2130968599;
+			// aapt resource value: 0x7f040019
+			public const int clienteBtn = 2130968601;
 			
 			// aapt resource value: 0x7f040000
 			public const int fragmentContainer = 2130968576;
@@ -95,14 +95,20 @@ namespace RentaCarros
 			// aapt resource value: 0x7f040009
 			public const int placa = 2130968585;
 			
-			// aapt resource value: 0x7f040018
-			public const int rentaBtn = 2130968600;
+			// aapt resource value: 0x7f04001a
+			public const int rentaBtn = 2130968602;
+			
+			// aapt resource value: 0x7f040015
+			public const int txtCedula = 2130968597;
 			
 			// aapt resource value: 0x7f04000d
 			public const int txtDescripcion = 2130968589;
 			
 			// aapt resource value: 0x7f040004
 			public const int txtKilometraje = 2130968580;
+			
+			// aapt resource value: 0x7f040016
+			public const int txtNombre = 2130968598;
 			
 			// aapt resource value: 0x7f040007
 			public const int txtPlaca = 2130968583;
@@ -160,10 +166,13 @@ namespace RentaCarros
 			public const int Cliente = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int Main = 2130837513;
+			public const int ClienteAgregarFragment = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int Renta = 2130837514;
+			public const int Main = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int Renta = 2130837515;
 			
 			static Layout()
 			{

@@ -54,9 +54,7 @@ namespace RentaCarros.Adapters
             var categoria = _baseCategoria.Seleccionar(item.CategoriaId);
 
             if (convertView == null)
-            {
                 convertView = context.LayoutInflater.Inflate(Resource.Layout.CarroRowView, null);
-            }
             
             convertView.FindViewById<TextView>(Resource.Id.placa).Text = $"Placa: {item.Placa}";
             convertView.FindViewById<TextView>(Resource.Id.categoria).Text = $"Categoria: {categoria.Descripcion}";

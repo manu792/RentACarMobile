@@ -68,20 +68,28 @@ namespace RentaCarros.Fragments.Categorias
 
         private void _btnGuardar_Click(object sender, EventArgs e)
         {
-            var id = Insertar(new Modelos.Categoria()
+            try
             {
-                Descripcion = _descripcion.Text,
-                PrecioDia = Convert.ToDouble(_precioDia.Text),
-                PrecioKm = Convert.ToDouble(_precioKm.Text),
-                TarifaDia = Convert.ToDouble(_tarifaDia.Text),
-                TarifaKm = Convert.ToDouble(_tarifaKm.Text)
-            });
-            
-            Toast.MakeText(this.Activity, id != 0 ? "Categoria agregada correctamemnte" 
-                    : "Hubo un problema al agregar la categoria. Intente de nuevo mas tarde", ToastLength.Short)
-                    .Show();
+                var id = Insertar(new Modelos.Categoria()
+                {
+                    Descripcion = _descripcion.Text,
+                    PrecioDia = Convert.ToDouble(_precioDia.Text),
+                    PrecioKm = Convert.ToDouble(_precioKm.Text),
+                    TarifaDia = Convert.ToDouble(_tarifaDia.Text),
+                    TarifaKm = Convert.ToDouble(_tarifaKm.Text)
+                });
 
-            LimpiarCampos();
+                Toast.MakeText(this.Activity, id != 0 ? "Categoria agregada correctamemnte"
+                        : "Hubo un problema al agregar la categoria. Intente de nuevo mas tarde", ToastLength.Short)
+                        .Show();
+
+                LimpiarCampos();
+            }
+            catch(Exception ex)
+            {
+                Toast.MakeText(this.Activity, ex.Message, ToastLength.Long)
+                        .Show();
+            }
         }
 
         private void LimpiarCampos()

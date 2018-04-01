@@ -44,6 +44,12 @@ namespace RentaCarros
         {
             categoriasBtn.Click += CategoriasBtn_Click;
             carrosBtn.Click += CarrosBtn_Click;
+            clientesBtn.Click += ClientesBtn_Click;
+        }
+
+        private void ClientesBtn_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(ClienteActivity));
         }
 
         private void CarrosBtn_Click(object sender, EventArgs e)

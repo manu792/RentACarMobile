@@ -82,62 +82,72 @@ namespace RentaCarros.Fragments.Categorias
             var spinner = (Spinner)sender;
             _categoriaSeleccionada = ((ArrayAdapter<Categoria>)spinner.Adapter).GetItem(e.Position);
 
-            Buscar(_categoriaSeleccionada.Id);
+            Buscar(_categoriaSeleccionada);
         }
 
         private void _btnEliminar_Click(object sender, EventArgs e)
         {
-            var count = Eliminar(new Categoria()
+            if(_categoriaSeleccionada != null)
             {
-                Id = _categoriaSeleccionada.Id,
-                Descripcion = _descripcion.Text,
-                PrecioKm = Convert.ToDouble(_precioKm.Text),
-                PrecioDia = Convert.ToDouble(_precioDia.Text),
-                TarifaDia = Convert.ToDouble(_tarifaDia.Text),
-                TarifaKm = Convert.ToDouble(_tarifaKm.Text)
-            });
+                var count = Eliminar(new Categoria()
+                {
+                    Id = _categoriaSeleccionada.Id,
+                    Descripcion = _descripcion.Text,
+                    PrecioKm = Convert.ToDouble(_precioKm.Text),
+                    PrecioDia = Convert.ToDouble(_precioDia.Text),
+                    TarifaDia = Convert.ToDouble(_tarifaDia.Text),
+                    TarifaKm = Convert.ToDouble(_tarifaKm.Text)
+                });
 
-            if (count > 0)
-            {
-                Toast.MakeText(this.Activity, "Categoria eliminada correctamente.", ToastLength.Short)
-                    .Show();
+                if (count > 0)
+                {
+                    Toast.MakeText(this.Activity, "Categoria eliminada correctamente.", ToastLength.Short)
+                        .Show();
 
-                _descripcion.Text = string.Empty;
-                _precioKm.Text = string.Empty;
-                _precioDia.Text = string.Empty;
-                _tarifaDia.Text = string.Empty;
-                _tarifaKm.Text = string.Empty;
+                    _descripcion.Text = string.Empty;
+                    _precioKm.Text = string.Empty;
+                    _precioDia.Text = string.Empty;
+                    _tarifaDia.Text = string.Empty;
+                    _tarifaKm.Text = string.Empty;
+                }
+                else
+                    Toast.MakeText(this.Activity, "Hubo un problema al tratar de eliminar la categoria. Intente de nuevo mas tarde",
+                        ToastLength.Short)
+                        .Show();
+
+                CargarCategorias();
             }
-            else
-                Toast.MakeText(this.Activity, "Hubo un problema al tratar de eliminar la categoria. Intente de nuevo mas tarde",
-                    ToastLength.Short)
-                    .Show();
         }
 
         private void _btnActualizar_Click(object sender, EventArgs e)
         {
-            var count = Actualizar(new Categoria()
+            if(_categoriaSeleccionada != null)
             {
-                 Id = _categoriaSeleccionada.Id,
-                 Descripcion = _descripcion.Text,
-                 PrecioKm = Convert.ToDouble(_precioKm.Text),
-                 PrecioDia = Convert.ToDouble(_precioDia.Text),
-                 TarifaDia = Convert.ToDouble(_tarifaDia.Text),
-                 TarifaKm = Convert.ToDouble(_tarifaKm.Text)
-            });
+                var count = Actualizar(new Categoria()
+                {
+                    Id = _categoriaSeleccionada.Id,
+                    Descripcion = _descripcion.Text,
+                    PrecioKm = Convert.ToDouble(_precioKm.Text),
+                    PrecioDia = Convert.ToDouble(_precioDia.Text),
+                    TarifaDia = Convert.ToDouble(_tarifaDia.Text),
+                    TarifaKm = Convert.ToDouble(_tarifaKm.Text)
+                });
 
-            if (count > 0)
-                Toast.MakeText(this.Activity, "Categoria modificada correctamente.", ToastLength.Short)
-                    .Show();
-            else
-                Toast.MakeText(this.Activity, "Hubo un problema al tratar de modificar la categoria. Intente de nuevo mas tarde", 
-                    ToastLength.Short)
-                    .Show();
+                if (count > 0)
+                    Toast.MakeText(this.Activity, "Categoria modificada correctamente.", ToastLength.Short)
+                        .Show();
+                else
+                    Toast.MakeText(this.Activity, "Hubo un problema al tratar de modificar la categoria. Intente de nuevo mas tarde",
+                        ToastLength.Short)
+                        .Show();
+
+                CargarCategorias();
+            }
         }
 
-        private void Buscar(int id)
+        private void Buscar(Categoria categoria)
         {
-            var categoria = Seleccionar(id);
+            //var categoria = Seleccionar(id);
 
             if (categoria != null)
             {
