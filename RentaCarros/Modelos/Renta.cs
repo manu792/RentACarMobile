@@ -9,13 +9,16 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace RentaCarros.Modelos
 {
     public class Renta
     {
         public int Id { get; set; }
+        [PrimaryKey]
         public int CarroId { get; set; }
+        [PrimaryKey]
         public int ClienteId { get; set; }
         public DateTime FechaRenta { get; set; }
         public DateTime FechaRetorno { get; set; }

@@ -60,6 +60,7 @@
     <Compile Include="CategoriaActivity.cs" />
     <Compile Include="ClienteActivity.cs" />
     <Compile Include="Datos\Database.cs" />
+    <Compile Include="Extensions\SelectableItemWrapper.cs" />
     <Compile Include="Fragments\Carros\BaseCarroFragment.cs" />
     <Compile Include="Fragments\Carros\CarroAgregarFragment.cs" />
     <Compile Include="Fragments\Carros\CarroBuscar2Fragment.cs" />
@@ -70,11 +71,15 @@
     <Compile Include="Fragments\Clientes\BaseClienteFragment.cs" />
     <Compile Include="Fragments\Clientes\ClienteAgregarFragment.cs" />
     <Compile Include="Fragments\Clientes\ClienteBuscarFragment.cs" />
+    <Compile Include="Fragments\Rentas\BaseRentaFragment.cs" />
+    <Compile Include="Fragments\Rentas\RentaAgregarFragment.cs" />
+    <Compile Include="Fragments\Rentas\RentaBuscarFragment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Modelos\Carro.cs" />
     <Compile Include="Modelos\Categoria.cs" />
     <Compile Include="Modelos\Cliente.cs" />
     <Compile Include="Modelos\Renta.cs" />
+    <Compile Include="MultiChoiceActivity.cs" />
     <Compile Include="RentaActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,6 +129,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ClienteRowView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MultiView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

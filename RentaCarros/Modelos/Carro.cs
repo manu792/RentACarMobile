@@ -9,5 +9,10 @@ namespace RentaCarros.Modelos
         [PrimaryKey]
         public string Placa { get; set; }
         public int Kilometraje { get; set; }
+
+        public override string ToString()
+        {
+            return $"Placa: {Placa} | Kilometraje: {Kilometraje}";
+        }
     }
 }

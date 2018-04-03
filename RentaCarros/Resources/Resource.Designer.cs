@@ -114,6 +114,9 @@ namespace RentaCarros
 			// aapt resource value: 0x7f05000b
 			public const int kilometraje = 2131034123;
 			
+			// aapt resource value: 0x7f05001e
+			public const int listViewTest = 2131034142;
+			
 			// aapt resource value: 0x7f050019
 			public const int nombre = 2131034137;
 			
@@ -203,7 +206,10 @@ namespace RentaCarros
 			public const int Main = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int Renta = 2130903053;
+			public const int MultiView = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int Renta = 2130903054;
 			
 			static Layout()
 			{
