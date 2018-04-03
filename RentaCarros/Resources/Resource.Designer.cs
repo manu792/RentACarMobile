@@ -63,6 +63,9 @@ namespace RentaCarros
 			// aapt resource value: 0x7f050012
 			public const int btnActualizar = 2131034130;
 			
+			// aapt resource value: 0x7f05001f
+			public const int btnCancelar = 2131034143;
+			
 			// aapt resource value: 0x7f050005
 			public const int btnCarroActualizar = 2131034117;
 			
@@ -74,6 +77,9 @@ namespace RentaCarros
 			
 			// aapt resource value: 0x7f05000c
 			public const int btnCarroGuardar = 2131034124;
+			
+			// aapt resource value: 0x7f050020
+			public const int btnContinuar = 2131034144;
 			
 			// aapt resource value: 0x7f050013
 			public const int btnEliminar = 2131034131;
@@ -210,6 +216,12 @@ namespace RentaCarros
 			
 			// aapt resource value: 0x7f03000e
 			public const int Renta = 2130903054;
+			
+			// aapt resource value: 0x7f03000f
+			public const int RentaAgregarFragment = 2130903055;
+			
+			// aapt resource value: 0x7f030010
+			public const int RentaSeleccionarCarro = 2130903056;
 			
 			static Layout()
 			{

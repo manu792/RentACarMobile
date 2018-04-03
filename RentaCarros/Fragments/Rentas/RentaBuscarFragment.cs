@@ -31,6 +31,14 @@ namespace RentaCarros.Fragments.Rentas
             // Create your fragment here
         }
 
+        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        {
+            // Use this to return your custom view for this Fragment
+            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+
+            return inflater.Inflate(Resource.Layout.RentaSeleccionarCarro, container, false);
+        }
+
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             base.OnActivityCreated(savedInstanceState);
@@ -38,14 +46,6 @@ namespace RentaCarros.Fragments.Rentas
             FindViews();
             HandleEvents();
             ActualizarClientes();
-        }
-
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
-            // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
-            return inflater.Inflate(Resource.Layout.ClienteBuscarFragment, container, false);
         }
 
         private void FindViews()

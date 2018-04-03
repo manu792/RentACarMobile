@@ -1,4 +1,6 @@
-﻿using SQLite;
+﻿using System;
+using Java.IO;
+using SQLite;
 
 namespace RentaCarros.Modelos
 {

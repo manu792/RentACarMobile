@@ -54,7 +54,7 @@ namespace RentaCarros
 
         private void RentasBtn_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(MultiChoiceActivity));
+            StartActivity(typeof(RentaActivity));
         }
 
         private void ClientesBtn_Click(object sender, EventArgs e)

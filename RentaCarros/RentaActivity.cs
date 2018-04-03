@@ -9,10 +9,11 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using RentaCarros.Fragments.Rentas;
 
 namespace RentaCarros
 {
-    [Activity(Label = "RentaActivity")]
+    [Activity(Label = "Rentas")]
     public class RentaActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -27,6 +28,9 @@ namespace RentaCarros
             ActionBar.SetIcon(Resource.Drawable.icon);
             ActionBar.SetDisplayShowHomeEnabled(true);
             ActionBar.DisplayOptions = ActionBarDisplayOptions.HomeAsUp | ActionBarDisplayOptions.ShowTitle | ActionBarDisplayOptions.ShowHome;
+
+            AddTab("Agregar", 0, new RentaAgregarFragment());
+            AddTab("Buscar", 0, new RentaBuscarFragment());
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
@@ -41,6 +45,28 @@ namespace RentaCarros
                     break;
             }
             return base.OnOptionsItemSelected(item);
+        }
+
+        private void AddTab(string text, int iconId, Fragment view)
+        {
+            var tab = ActionBar.NewTab();
+            tab.SetText(text);
+            //tab.SetIcon(iconId);
+
+            tab.TabSelected += (sender, e) =>
+            {
+                var fragment = FragmentManager.FindFragmentById(Resource.Id.fragmentContainer);
+                if (fragment != null)
+                    e.FragmentTransaction.Remove(fragment);
+                e.FragmentTransaction.Add(Resource.Id.fragmentContainer, view);
+            };
+
+            tab.TabUnselected += (sender, e) =>
+            {
+                e.FragmentTransaction.Remove(view);
+            };
+
+            ActionBar.AddTab(tab);
         }
     }
 }
