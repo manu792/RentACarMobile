@@ -154,8 +154,8 @@ namespace RentaCarros.Datos
                     new Renta()
                     {
                         Id = 1,
-                        CarroId = 1,
-                        ClienteId = 2,
+                        CarroId = "1234567",
+                        ClienteId = "123456",
                         FechaRenta = DateTime.Now,
                         FechaRetorno = DateTime.Now.AddMonths(1),
                         MetrosRenta = 5000,

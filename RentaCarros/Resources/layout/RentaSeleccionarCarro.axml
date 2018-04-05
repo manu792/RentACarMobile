@@ -1,50 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <EditText
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/buscar"
-      android:hint="Buscar..." />
-  <ListView
-      android:minWidth="25px"
-      android:minHeight="25px"
-      android:layout_height="wrap_content"
-      android:layout_width="match_parent"
-      android:id="@+id/carrosListView" />
-  <EditText
-      android:padding="2dp"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/categoria"
-      android:editable="false"
-      android:layout_marginTop="30dp" />
-  <EditText
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/kilometraje"
-      android:hint="Kilometraje..."
-      android:editable="false" />
-  <RelativeLayout
-      android:orientation="vertical"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content">
-    <Button
-        android:text="Cancelar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnCancelar"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="94.5dp" />
-    <Button
-        android:text="Guardar Renta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnGuardar"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="208.0dp" />
-  </RelativeLayout>
-</LinearLayout>
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buscar"
+            android:hint="Buscar..." />
+        <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/carrosListView" />
+        <EditText
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoria"
+            android:editable="false"
+            android:layout_marginTop="30dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kilometraje"
+            android:hint="Kilometraje..."
+            android:editable="false" />
+        <Button
+            android:text="Fecha Renta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFechaRenta" />
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFechaRenta"
+            android:inputType="date" />
+        <Button
+            android:text="Fecha Retono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFechaRetorno" />
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFechaRetorno"
+            android:inputType="date" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/metrosRenta"
+            android:hint="Metros Renta..."
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/metrosRetorno"
+            android:hint="Metros Retorno..."
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/precioDia"
+            android:hint="Precio Dia..."
+            android:editable="false"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/precioKm"
+            android:hint="Precio Km..."
+            android:editable="false"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tarifaDia"
+            android:hint="Tarifa Dia..."
+            android:editable="false"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tarifaKm"
+            android:hint="Tarifa Km..."
+            android:editable="false"/>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCancelar"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="67.0dp" />
+            <Button
+                android:text="Guardar Renta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGuardar"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginLeft="184.5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

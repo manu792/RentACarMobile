@@ -74,6 +74,7 @@
     <Compile Include="Fragments\Clientes\BaseClienteFragment.cs" />
     <Compile Include="Fragments\Clientes\ClienteAgregarFragment.cs" />
     <Compile Include="Fragments\Clientes\ClienteBuscarFragment.cs" />
+    <Compile Include="Fragments\DatePickerFragment.cs" />
     <Compile Include="Fragments\Rentas\BaseRentaFragment.cs" />
     <Compile Include="Fragments\Rentas\RentaAgregarFragment.cs" />
     <Compile Include="Fragments\Rentas\RentaBuscarFragment.cs" />
@@ -84,7 +85,7 @@
     <Compile Include="Modelos\Renta.cs" />
     <Compile Include="MultiChoiceActivity.cs" />
     <Compile Include="RentaActivity.cs" />
-    <Compile Include="RentaSeleccionarCarroActivity.cs" />
+    <Compile Include="RentaSeleccionarCarroFragment.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLite.cs" />

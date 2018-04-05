@@ -41,10 +41,16 @@ namespace RentaCarros.Fragments.Rentas
         {
             return _database.Select().ToList();
         }
-        public Renta Seleccionar(int clienteId, int carroId)
+        public Renta Seleccionar(string clienteId, string carroId)
         {
             var table = _database.Select();
             var result = table.FirstOrDefault(t => t.ClienteId == clienteId && t.CarroId == carroId);
+            return result;
+        }
+        public IList<Renta> Seleccionar(string clienteId)
+        {
+            var table = _database.Select();
+            var result = table.Where(t => t.ClienteId == clienteId).ToList();
             return result;
         }
     }

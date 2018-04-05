@@ -84,6 +84,12 @@ namespace RentaCarros
 			// aapt resource value: 0x7f050013
 			public const int btnEliminar = 2131034131;
 			
+			// aapt resource value: 0x7f050022
+			public const int btnFechaRenta = 2131034146;
+			
+			// aapt resource value: 0x7f050024
+			public const int btnFechaRetorno = 2131034148;
+			
 			// aapt resource value: 0x7f050014
 			public const int btnGuardar = 2131034132;
 			
@@ -123,20 +129,47 @@ namespace RentaCarros
 			// aapt resource value: 0x7f05001e
 			public const int listViewTest = 2131034142;
 			
+			// aapt resource value: 0x7f050026
+			public const int metrosRenta = 2131034150;
+			
+			// aapt resource value: 0x7f050027
+			public const int metrosRetorno = 2131034151;
+			
 			// aapt resource value: 0x7f050019
 			public const int nombre = 2131034137;
 			
 			// aapt resource value: 0x7f050009
 			public const int placa = 2131034121;
 			
+			// aapt resource value: 0x7f050028
+			public const int precioDia = 2131034152;
+			
+			// aapt resource value: 0x7f050029
+			public const int precioKm = 2131034153;
+			
 			// aapt resource value: 0x7f05001d
 			public const int rentaBtn = 2131034141;
+			
+			// aapt resource value: 0x7f050021
+			public const int scrollView = 2131034145;
+			
+			// aapt resource value: 0x7f05002a
+			public const int tarifaDia = 2131034154;
+			
+			// aapt resource value: 0x7f05002b
+			public const int tarifaKm = 2131034155;
 			
 			// aapt resource value: 0x7f050015
 			public const int txtCedula = 2131034133;
 			
 			// aapt resource value: 0x7f05000d
 			public const int txtDescripcion = 2131034125;
+			
+			// aapt resource value: 0x7f050023
+			public const int txtFechaRenta = 2131034147;
+			
+			// aapt resource value: 0x7f050025
+			public const int txtFechaRetorno = 2131034149;
 			
 			// aapt resource value: 0x7f050004
 			public const int txtKilometraje = 2131034116;

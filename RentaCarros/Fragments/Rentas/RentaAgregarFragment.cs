@@ -92,7 +92,7 @@ namespace RentaCarros.Fragments.Rentas
 
         private void _btnContinuar_Click(object sender, EventArgs e)
         {
-            var renta = new RentaSeleccionarCarroActivity();
+            var renta = new RentaSeleccionarCarroFragment();
 
             var bundle = new Bundle();
             bundle.PutString("cliente", JsonConvert.SerializeObject(_clienteSeleccionado));

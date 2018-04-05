@@ -17,9 +17,9 @@ namespace RentaCarros.Modelos
     {
         public int Id { get; set; }
         [PrimaryKey]
-        public int CarroId { get; set; }
+        public string CarroId { get; set; }
         [PrimaryKey]
-        public int ClienteId { get; set; }
+        public string ClienteId { get; set; }
         public DateTime FechaRenta { get; set; }
         public DateTime FechaRetorno { get; set; }
         public int MetrosRenta { get; set; }
