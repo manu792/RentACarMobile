@@ -53,6 +53,7 @@ namespace RentaCarros.Adapters
             if (convertView == null)
                 convertView = context.LayoutInflater.Inflate(Resource.Layout.RentaRowView, null);
 
+            convertView.FindViewById<TextView>(Resource.Id.id).Text = item.Id.ToString();
             convertView.FindViewById<TextView>(Resource.Id.clienteNombre).Text = item.ClienteNombre;
             convertView.FindViewById<TextView>(Resource.Id.clienteCedula).Text = item.ClienteId;
             convertView.FindViewById<TextView>(Resource.Id.carroPlaca).Text = item.CarroId;

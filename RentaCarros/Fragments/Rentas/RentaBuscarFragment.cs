@@ -209,6 +209,14 @@ namespace RentaCarros.Fragments.Rentas
 
         private void LimpiarCampos()
         {
+            _txtFechaRenta.Text = string.Empty;
+            _txtFechaRetorno.Text = string.Empty;
+            _metrosRenta.Text = string.Empty;
+            _metrosRetorno.Text = string.Empty;
+            _precioDia.Text = string.Empty;
+            _precioKm.Text = string.Empty;
+            _tarifaDia.Text = string.Empty;
+            _tarifaKm.Text = string.Empty;
         }
 
         private void ConfigurarAlturaListView()

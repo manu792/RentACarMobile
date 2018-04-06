@@ -39,6 +39,7 @@ namespace RentaCarros
         }
         private void Init()
         {
+            //File.Delete(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3"));
             categoriasBtn = FindViewById<Button>(Resource.Id.categoriaBtn);
             carrosBtn = FindViewById<Button>(Resource.Id.carroBtn);
             clientesBtn = FindViewById<Button>(Resource.Id.clienteBtn);

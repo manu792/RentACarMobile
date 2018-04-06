@@ -15,10 +15,9 @@ namespace RentaCarros.Modelos
 {
     public class Renta
     {
+        [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        [PrimaryKey]
         public string CarroId { get; set; }
-        [PrimaryKey]
         public string ClienteId { get; set; }
         public DateTime FechaRenta { get; set; }
         public DateTime FechaRetorno { get; set; }

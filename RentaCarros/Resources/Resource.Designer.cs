@@ -99,8 +99,8 @@ namespace RentaCarros
 			// aapt resource value: 0x7f05001c
 			public const int carroBtn = 2131034140;
 			
-			// aapt resource value: 0x7f05002f
-			public const int carroPlaca = 2131034159;
+			// aapt resource value: 0x7f050030
+			public const int carroPlaca = 2131034160;
 			
 			// aapt resource value: 0x7f050003
 			public const int carrosListView = 2131034115;
@@ -120,17 +120,20 @@ namespace RentaCarros
 			// aapt resource value: 0x7f05001d
 			public const int clienteBtn = 2131034141;
 			
-			// aapt resource value: 0x7f05002e
-			public const int clienteCedula = 2131034158;
+			// aapt resource value: 0x7f05002f
+			public const int clienteCedula = 2131034159;
 			
-			// aapt resource value: 0x7f05002d
-			public const int clienteNombre = 2131034157;
+			// aapt resource value: 0x7f05002e
+			public const int clienteNombre = 2131034158;
 			
 			// aapt resource value: 0x7f050018
 			public const int clientesListView = 2131034136;
 			
 			// aapt resource value: 0x7f050000
 			public const int fragmentContainer = 2131034112;
+			
+			// aapt resource value: 0x7f05002d
+			public const int id = 2131034157;
 			
 			// aapt resource value: 0x7f05000c
 			public const int kilometraje = 2131034124;

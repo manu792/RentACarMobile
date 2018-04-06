@@ -4,6 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:padding="8dp">
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="200dp"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="left" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

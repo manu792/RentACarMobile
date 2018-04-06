@@ -147,7 +147,7 @@ namespace RentaCarros
                         : "Hubo un problema al agregar la renta. Intente de nuevo mas tarde", ToastLength.Short)
                         .Show();
 
-                LimpiarCampos();
+                RegresarAMain();
             }
             catch (Exception ex)
             {
@@ -157,6 +157,11 @@ namespace RentaCarros
         }
 
         private void _btnCancelar_Click(object sender, EventArgs e)
+        {
+            RegresarAMain();
+        }
+
+        private void RegresarAMain()
         {
             this.Activity.Finish();
         }
@@ -218,6 +223,10 @@ namespace RentaCarros
         {
             _categoria.Text = string.Empty;
             _kilometraje.Text = string.Empty;
+            _txtPrecioDia.Text = string.Empty;
+            _txtPrecioKm.Text = string.Empty;
+            _txtTarifaDia.Text = string.Empty;
+            _txtTarifaKm.Text = string.Empty;
         }
 
         private void ConfigurarAlturaListView()

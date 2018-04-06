@@ -75,24 +75,6 @@ namespace RentaCarros.Datos
                 conn.CreateTable<Renta>();
                 conn.CreateTable<Categoria>();
 
-                conn.Insert(new Categoria()
-                {
-                    Id = 1,
-                    Descripcion = "Vehiculo liviano",
-                    PrecioDia = 150000,
-                    PrecioKm = 1000,
-                    TarifaDia = 120000,
-                    TarifaKm = 2000
-                });
-                conn.Insert(new Categoria()
-                {
-                    Id = 2,
-                    Descripcion = "Carga liviana",
-                    PrecioDia = 150000,
-                    PrecioKm = 1000,
-                    TarifaDia = 120000,
-                    TarifaKm = 2000
-                });
                 conn.InsertAll(new List<Categoria>()
                 {
                     new Categoria()
@@ -146,24 +128,6 @@ namespace RentaCarros.Datos
                         Id = 2,
                         Cedula = "116115487",
                         Nombre = "Ellie Roman"
-                    }
-                });
-
-                conn.InsertAll(new List<Renta>
-                {
-                    new Renta()
-                    {
-                        Id = 1,
-                        CarroId = "1234567",
-                        ClienteId = "123456",
-                        FechaRenta = DateTime.Now,
-                        FechaRetorno = DateTime.Now.AddMonths(1),
-                        MetrosRenta = 5000,
-                        MetrosRetorno = 7000,
-                        PrecioDia = 15000,
-                        PrecioKm = 3000,
-                        TarifaDia = 3500,
-                        TarifaKm = 4000
                     }
                 });
             }
