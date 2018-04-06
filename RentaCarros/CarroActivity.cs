@@ -30,8 +30,7 @@ namespace RentaCarros
             ActionBar.DisplayOptions = ActionBarDisplayOptions.HomeAsUp | ActionBarDisplayOptions.ShowTitle | ActionBarDisplayOptions.ShowHome;
 
             AddTab("Agregar", 0, new CarroAgregarFragment());
-            AddTab("Buscar", 0, new CarroBuscarFragment());
-            AddTab("Buscar2", 0, new CarroBuscar2Fragment());
+            AddTab("Buscar", 0, new CarroBuscar2Fragment());
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

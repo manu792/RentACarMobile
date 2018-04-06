@@ -171,6 +171,9 @@ namespace RentaCarros.Fragments.Carros
             filteredList = carros;
             _carroSeleccionado = null;
             _listView.Adapter = new CarroListAdapter(this.Activity, filteredList);
+
+            ConfigurarAlturaListView();
+
             LimpiarCampos();
         }
 
@@ -192,6 +195,29 @@ namespace RentaCarros.Fragments.Carros
             }
 
             return -1;
+        }
+
+        private void ConfigurarAlturaListView()
+        {
+            var listAdapter = _listView.Adapter;
+            if (listAdapter == null)
+                return;
+
+            int desiredWidth = View.MeasureSpec.MakeMeasureSpec(_listView.Width, MeasureSpecMode.Unspecified);
+            int totalHeight = 0;
+            View view = null;
+            for (int i = 0; i < listAdapter.Count; i++)
+            {
+                view = listAdapter.GetView(i, view, _listView);
+                if (i == 0)
+                    view.LayoutParameters = (new ViewGroup.LayoutParams(desiredWidth, WindowManagerLayoutParams.WrapContent));
+
+                view.Measure(desiredWidth, (int)MeasureSpecMode.Unspecified);
+                totalHeight += view.MeasuredHeight;
+            }
+            ViewGroup.LayoutParams prm = _listView.LayoutParameters;
+            prm.Height = totalHeight + (_listView.DividerHeight * (listAdapter.Count - 1));
+            _listView.LayoutParameters = prm;
         }
     }
 }

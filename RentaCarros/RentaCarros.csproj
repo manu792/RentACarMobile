@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Adapters\CarroListAdapter.cs" />
     <Compile Include="Adapters\ClienteListAdapter.cs" />
+    <Compile Include="Adapters\RentaListAdapter.cs" />
     <Compile Include="CarroActivity.cs" />
     <Compile Include="CategoriaActivity.cs" />
     <Compile Include="ClienteActivity.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Modelos\Categoria.cs" />
     <Compile Include="Modelos\Cliente.cs" />
     <Compile Include="Modelos\Renta.cs" />
+    <Compile Include="Modelos\RentaCliente.cs" />
     <Compile Include="MultiChoiceActivity.cs" />
     <Compile Include="RentaActivity.cs" />
     <Compile Include="RentaSeleccionarCarroFragment.cs" />
@@ -143,6 +145,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\RentaSeleccionarCarro.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RentaBuscarFragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RentaRowView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

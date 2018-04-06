@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+  <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -25,20 +29,21 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-        <Button
-            android:text="Cancelar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnCancelar"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="94.5dp" />
-        <Button
-            android:text="Continuar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnContinuar"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="208.0dp" />
+      <Button
+          android:text="Cancelar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnCancelar"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="94.5dp" />
+      <Button
+          android:text="Continuar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnContinuar"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="208.0dp" />
     </RelativeLayout>
-</LinearLayout>
+  </LinearLayout>
+</ScrollView>

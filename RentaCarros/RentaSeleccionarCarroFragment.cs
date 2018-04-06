@@ -198,7 +198,7 @@ namespace RentaCarros
         private void ActualizarCarros()
         {
             carros = _baseCarro.Seleccionar();
-            var rentas = Seleccionar(_cliente.Cedula);
+            var rentas = Seleccionar();
 
             carros = carros.Where(c => !rentas
                 .Select(r => r.CarroId)
@@ -208,6 +208,9 @@ namespace RentaCarros
             filteredList = carros;
             _carroSeleccionado = null;
             _listView.Adapter = new CarroListAdapter(this.Activity, filteredList);
+
+            ConfigurarAlturaListView();
+
             LimpiarCampos();
         }
 
@@ -215,6 +218,29 @@ namespace RentaCarros
         {
             _categoria.Text = string.Empty;
             _kilometraje.Text = string.Empty;
+        }
+
+        private void ConfigurarAlturaListView()
+        {
+            var listAdapter = _listView.Adapter;
+            if (listAdapter == null)
+                return;
+
+            int desiredWidth = View.MeasureSpec.MakeMeasureSpec(_listView.Width, MeasureSpecMode.Unspecified);
+            int totalHeight = 0;
+            View view = null;
+            for (int i = 0; i < listAdapter.Count; i++)
+            {
+                view = listAdapter.GetView(i, view, _listView);
+                if (i == 0)
+                    view.LayoutParameters = (new ViewGroup.LayoutParams(desiredWidth, WindowManagerLayoutParams.WrapContent));
+
+                view.Measure(desiredWidth, (int)MeasureSpecMode.Unspecified);
+                totalHeight += view.MeasuredHeight;
+            }
+            ViewGroup.LayoutParams prm = _listView.LayoutParameters;
+            prm.Height = totalHeight + (_listView.DividerHeight * (listAdapter.Count - 1));
+            _listView.LayoutParameters = prm;
         }
     }
 }

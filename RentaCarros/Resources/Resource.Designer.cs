@@ -60,137 +60,149 @@ namespace RentaCarros
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050012
-			public const int btnActualizar = 2131034130;
-			
-			// aapt resource value: 0x7f05001f
-			public const int btnCancelar = 2131034143;
-			
-			// aapt resource value: 0x7f050005
-			public const int btnCarroActualizar = 2131034117;
-			
-			// aapt resource value: 0x7f050008
-			public const int btnCarroBuscar = 2131034120;
-			
-			// aapt resource value: 0x7f050006
-			public const int btnCarroEliminar = 2131034118;
-			
-			// aapt resource value: 0x7f05000c
-			public const int btnCarroGuardar = 2131034124;
+			// aapt resource value: 0x7f050013
+			public const int btnActualizar = 2131034131;
 			
 			// aapt resource value: 0x7f050020
-			public const int btnContinuar = 2131034144;
+			public const int btnCancelar = 2131034144;
 			
-			// aapt resource value: 0x7f050013
-			public const int btnEliminar = 2131034131;
+			// aapt resource value: 0x7f050006
+			public const int btnCarroActualizar = 2131034118;
 			
-			// aapt resource value: 0x7f050022
-			public const int btnFechaRenta = 2131034146;
+			// aapt resource value: 0x7f050009
+			public const int btnCarroBuscar = 2131034121;
 			
-			// aapt resource value: 0x7f050024
-			public const int btnFechaRetorno = 2131034148;
+			// aapt resource value: 0x7f050007
+			public const int btnCarroEliminar = 2131034119;
+			
+			// aapt resource value: 0x7f05000d
+			public const int btnCarroGuardar = 2131034125;
+			
+			// aapt resource value: 0x7f050021
+			public const int btnContinuar = 2131034145;
 			
 			// aapt resource value: 0x7f050014
-			public const int btnGuardar = 2131034132;
+			public const int btnEliminar = 2131034132;
 			
-			// aapt resource value: 0x7f050001
-			public const int buscar = 2131034113;
+			// aapt resource value: 0x7f050023
+			public const int btnFechaRenta = 2131034147;
 			
-			// aapt resource value: 0x7f05001b
-			public const int carroBtn = 2131034139;
+			// aapt resource value: 0x7f050025
+			public const int btnFechaRetorno = 2131034149;
+			
+			// aapt resource value: 0x7f050015
+			public const int btnGuardar = 2131034133;
 			
 			// aapt resource value: 0x7f050002
-			public const int carrosListView = 2131034114;
-			
-			// aapt resource value: 0x7f05000a
-			public const int categoria = 2131034122;
-			
-			// aapt resource value: 0x7f05001a
-			public const int categoriaBtn = 2131034138;
-			
-			// aapt resource value: 0x7f050003
-			public const int categoriasDropDown = 2131034115;
-			
-			// aapt resource value: 0x7f050018
-			public const int cedula = 2131034136;
+			public const int buscar = 2131034114;
 			
 			// aapt resource value: 0x7f05001c
-			public const int clienteBtn = 2131034140;
+			public const int carroBtn = 2131034140;
 			
-			// aapt resource value: 0x7f050017
-			public const int clientesListView = 2131034135;
+			// aapt resource value: 0x7f05002f
+			public const int carroPlaca = 2131034159;
+			
+			// aapt resource value: 0x7f050003
+			public const int carrosListView = 2131034115;
+			
+			// aapt resource value: 0x7f05000b
+			public const int categoria = 2131034123;
+			
+			// aapt resource value: 0x7f05001b
+			public const int categoriaBtn = 2131034139;
+			
+			// aapt resource value: 0x7f050004
+			public const int categoriasDropDown = 2131034116;
+			
+			// aapt resource value: 0x7f050019
+			public const int cedula = 2131034137;
+			
+			// aapt resource value: 0x7f05001d
+			public const int clienteBtn = 2131034141;
+			
+			// aapt resource value: 0x7f05002e
+			public const int clienteCedula = 2131034158;
+			
+			// aapt resource value: 0x7f05002d
+			public const int clienteNombre = 2131034157;
+			
+			// aapt resource value: 0x7f050018
+			public const int clientesListView = 2131034136;
 			
 			// aapt resource value: 0x7f050000
 			public const int fragmentContainer = 2131034112;
 			
-			// aapt resource value: 0x7f05000b
-			public const int kilometraje = 2131034123;
+			// aapt resource value: 0x7f05000c
+			public const int kilometraje = 2131034124;
 			
-			// aapt resource value: 0x7f05001e
-			public const int listViewTest = 2131034142;
-			
-			// aapt resource value: 0x7f050026
-			public const int metrosRenta = 2131034150;
+			// aapt resource value: 0x7f05001f
+			public const int listViewTest = 2131034143;
 			
 			// aapt resource value: 0x7f050027
-			public const int metrosRetorno = 2131034151;
-			
-			// aapt resource value: 0x7f050019
-			public const int nombre = 2131034137;
-			
-			// aapt resource value: 0x7f050009
-			public const int placa = 2131034121;
+			public const int metrosRenta = 2131034151;
 			
 			// aapt resource value: 0x7f050028
-			public const int precioDia = 2131034152;
+			public const int metrosRetorno = 2131034152;
+			
+			// aapt resource value: 0x7f05001a
+			public const int nombre = 2131034138;
+			
+			// aapt resource value: 0x7f05000a
+			public const int placa = 2131034122;
 			
 			// aapt resource value: 0x7f050029
-			public const int precioKm = 2131034153;
-			
-			// aapt resource value: 0x7f05001d
-			public const int rentaBtn = 2131034141;
-			
-			// aapt resource value: 0x7f050021
-			public const int scrollView = 2131034145;
+			public const int precioDia = 2131034153;
 			
 			// aapt resource value: 0x7f05002a
-			public const int tarifaDia = 2131034154;
+			public const int precioKm = 2131034154;
+			
+			// aapt resource value: 0x7f05001e
+			public const int rentaBtn = 2131034142;
+			
+			// aapt resource value: 0x7f050022
+			public const int rentasListView = 2131034146;
+			
+			// aapt resource value: 0x7f050001
+			public const int scrollView = 2131034113;
 			
 			// aapt resource value: 0x7f05002b
-			public const int tarifaKm = 2131034155;
+			public const int tarifaDia = 2131034155;
 			
-			// aapt resource value: 0x7f050015
-			public const int txtCedula = 2131034133;
-			
-			// aapt resource value: 0x7f05000d
-			public const int txtDescripcion = 2131034125;
-			
-			// aapt resource value: 0x7f050023
-			public const int txtFechaRenta = 2131034147;
-			
-			// aapt resource value: 0x7f050025
-			public const int txtFechaRetorno = 2131034149;
-			
-			// aapt resource value: 0x7f050004
-			public const int txtKilometraje = 2131034116;
+			// aapt resource value: 0x7f05002c
+			public const int tarifaKm = 2131034156;
 			
 			// aapt resource value: 0x7f050016
-			public const int txtNombre = 2131034134;
-			
-			// aapt resource value: 0x7f050007
-			public const int txtPlaca = 2131034119;
-			
-			// aapt resource value: 0x7f05000f
-			public const int txtPrecioDia = 2131034127;
+			public const int txtCedula = 2131034134;
 			
 			// aapt resource value: 0x7f05000e
-			public const int txtPrecioKm = 2131034126;
+			public const int txtDescripcion = 2131034126;
+			
+			// aapt resource value: 0x7f050024
+			public const int txtFechaRenta = 2131034148;
+			
+			// aapt resource value: 0x7f050026
+			public const int txtFechaRetorno = 2131034150;
+			
+			// aapt resource value: 0x7f050005
+			public const int txtKilometraje = 2131034117;
+			
+			// aapt resource value: 0x7f050017
+			public const int txtNombre = 2131034135;
+			
+			// aapt resource value: 0x7f050008
+			public const int txtPlaca = 2131034120;
 			
 			// aapt resource value: 0x7f050010
-			public const int txtTarifaDia = 2131034128;
+			public const int txtPrecioDia = 2131034128;
+			
+			// aapt resource value: 0x7f05000f
+			public const int txtPrecioKm = 2131034127;
 			
 			// aapt resource value: 0x7f050011
-			public const int txtTarifaKm = 2131034129;
+			public const int txtTarifaDia = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public const int txtTarifaKm = 2131034130;
 			
 			static Id()
 			{
@@ -254,7 +266,13 @@ namespace RentaCarros
 			public const int RentaAgregarFragment = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int RentaSeleccionarCarro = 2130903056;
+			public const int RentaBuscarFragment = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int RentaRowView = 2130903057;
+			
+			// aapt resource value: 0x7f030012
+			public const int RentaSeleccionarCarro = 2130903058;
 			
 			static Layout()
 			{

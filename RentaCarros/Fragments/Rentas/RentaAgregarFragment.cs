@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Newtonsoft.Json;
 using RentaCarros.Adapters;
+using RentaCarros.Fragments.Carros;
 using RentaCarros.Fragments.Clientes;
 using RentaCarros.Modelos;
 
@@ -27,10 +28,14 @@ namespace RentaCarros.Fragments.Rentas
         private IList<Cliente> _clientes;
         private IList<Cliente> _filteredList;
         private BaseClienteFragment _baseCliente;
+        private BaseCarroFragment _baseCarro;
+        private BaseRentaFragment _baseRenta;
 
         public RentaAgregarFragment()
         {
             _baseCliente = new BaseClienteFragment();
+            _baseCarro = new BaseCarroFragment();
+            _baseRenta = new BaseRentaFragment();
         }
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -92,15 +97,33 @@ namespace RentaCarros.Fragments.Rentas
 
         private void _btnContinuar_Click(object sender, EventArgs e)
         {
-            var renta = new RentaSeleccionarCarroFragment();
+            if (HayCarrosDisponibles())
+            {
+                var renta = new RentaSeleccionarCarroFragment();
 
-            var bundle = new Bundle();
-            bundle.PutString("cliente", JsonConvert.SerializeObject(_clienteSeleccionado));
+                var bundle = new Bundle();
+                bundle.PutString("cliente", JsonConvert.SerializeObject(_clienteSeleccionado));
 
-            var transaction = FragmentManager.BeginTransaction();
-            transaction.Replace(Resource.Id.fragmentContainer, renta, "renta");
-            transaction.Commit();
-            renta.Arguments = bundle;
+                var transaction = FragmentManager.BeginTransaction();
+                transaction.Replace(Resource.Id.fragmentContainer, renta, "renta");
+                transaction.Commit();
+                renta.Arguments = bundle;
+            }
+            else
+                Toast.MakeText(this.Activity, 
+                    "No hay carros disponibles para rentar. Intente despues de agregar un nuevo carro", 
+                    ToastLength.Long).Show();
+        }
+
+        private bool HayCarrosDisponibles()
+        {
+            var carros = _baseCarro.Seleccionar();
+            var rentas = _baseRenta.Seleccionar();
+
+            return carros.Where(c => !rentas
+                .Select(r => r.CarroId)
+                .Contains(c.Placa)
+            ).ToList().Count > 0;
         }
 
         private void _btnCancelar_Click(object sender, EventArgs e)
@@ -120,7 +143,32 @@ namespace RentaCarros.Fragments.Rentas
             _clienteSeleccionado = null;
             _listView.Adapter = new ClienteListAdapter(this.Activity, _filteredList);
 
+            ConfigurarAlturaListView();
+
             LimpiarCampos();
+        }
+
+        private void ConfigurarAlturaListView()
+        {
+            var listAdapter = _listView.Adapter;
+            if (listAdapter == null)
+                return;
+
+            int desiredWidth = View.MeasureSpec.MakeMeasureSpec(_listView.Width, MeasureSpecMode.Unspecified);
+            int totalHeight = 0;
+            View view = null;
+            for (int i = 0; i < listAdapter.Count; i++)
+            {
+                view = listAdapter.GetView(i, view, _listView);
+                if (i == 0)
+                    view.LayoutParameters = (new ViewGroup.LayoutParams(desiredWidth, WindowManagerLayoutParams.WrapContent));
+
+                view.Measure(desiredWidth, (int)MeasureSpecMode.Unspecified);
+                totalHeight += view.MeasuredHeight;
+            }
+            ViewGroup.LayoutParams prm = _listView.LayoutParameters;
+            prm.Height = totalHeight + (_listView.DividerHeight * (listAdapter.Count - 1));
+            _listView.LayoutParameters = prm;
         }
     }
 }

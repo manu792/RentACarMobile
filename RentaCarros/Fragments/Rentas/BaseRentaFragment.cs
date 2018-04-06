@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using RentaCarros.Datos;
+using RentaCarros.Fragments.Clientes;
 using RentaCarros.Modelos;
 
 namespace RentaCarros.Fragments.Rentas
@@ -17,10 +18,12 @@ namespace RentaCarros.Fragments.Rentas
     public class BaseRentaFragment : Fragment
     {
         private Database<Renta> _database;
+        private BaseClienteFragment _baseCliente;
 
         public BaseRentaFragment()
         {
             _database = Database<Renta>.Instance;
+            _baseCliente = new BaseClienteFragment();
         }
 
         public int Insertar(Renta obj)
@@ -37,9 +40,24 @@ namespace RentaCarros.Fragments.Rentas
         {
             return _database.Delete(obj);
         }
-        public IList<Renta> Seleccionar()
+        public IList<RentaCliente> Seleccionar()
         {
-            return _database.Select().ToList();
+            var rentas = _database.Select().ToList();
+            return rentas.Select(r => new RentaCliente()
+            {
+                Id = r.Id,
+                CarroId = r.CarroId,
+                ClienteId = r.ClienteId,
+                ClienteNombre = _baseCliente.Seleccionar(r.ClienteId) != null ? _baseCliente.Seleccionar(r.ClienteId).Nombre : "Not Found",
+                FechaRenta = r.FechaRenta,
+                FechaRetorno = r.FechaRetorno,
+                MetrosRenta = r.MetrosRenta,
+                MetrosRetorno = r.MetrosRetorno,
+                PrecioDia = r.PrecioDia,
+                PrecioKm = r.PrecioKm,
+                TarifaDia = r.TarifaDia,
+                TarifaKm = r.TarifaKm
+            }).ToList();
         }
         public Renta Seleccionar(string clienteId, string carroId)
         {
