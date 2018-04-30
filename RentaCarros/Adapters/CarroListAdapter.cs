@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using RentaCarros.Fragments.Categorias;
 using RentaCarros.Modelos;
+using Android;
 
 namespace RentaCarros.Adapters
 {

@@ -16,6 +16,7 @@ using RentaCarros.Fragments.Carros;
 using RentaCarros.Fragments.Categorias;
 using RentaCarros.Fragments.Rentas;
 using RentaCarros.Modelos;
+using Android;
 
 namespace RentaCarros
 {
